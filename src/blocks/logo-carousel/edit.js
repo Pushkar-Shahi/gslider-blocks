@@ -90,14 +90,11 @@ export default function Edit( {
 
 		enableLogoLinks,
 		showTooltip,
-		logoLinkTarget,
-		logoLinkRel,
 		logoLinkHoverEffect,
 		logoLinkHoverOpacity,
 		logoLinkHoverScale,
 		logoLinkHoverLift,
 		logoLinkHoverLiftUnits,
-		logoLinkTransitionDuration,
 		enableLazyLoad,
 	} = attributes;
 
@@ -158,7 +155,7 @@ export default function Edit( {
 	};
 
 	// Local state management for slider items and active slide index
-	const [ selectedSlideIndex, setSelectedSlideIndex ] = useState( 0 );
+	const [ , setSelectedSlideIndex ] = useState( 0 );
 
 	// Refs for vanilla JS Swiper
 	const swiperContainerRef = useRef( null );
