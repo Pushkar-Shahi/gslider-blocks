@@ -155,7 +155,7 @@ export default function Edit( {
 	};
 
 	// Local state management for slider items and active slide index
-	const [ , setSelectedSlideIndex ] = useState( 0 );
+	const [ selectedSlideIndex, setSelectedSlideIndex ] = useState( 0 );
 
 	// Refs for vanilla JS Swiper
 	const swiperContainerRef = useRef( null );
